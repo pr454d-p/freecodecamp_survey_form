@@ -33,27 +33,48 @@ label{
 }
 input,select,textarea{
     background-color: #dcfb8d;
-    border: 0;
+    border: 5px;
     margin: 10px 0 0 0;
     width: 100%;
     min-height: 2em;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 input{
-    border: 1px solid #dcfb8d;
-    padding: 1px 2px;
+    border: 0 solid #dcfb8d;
+    padding: 1px 3px;
+}
+.address-class{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+.address{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.street{
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 .city{
-    width: 57%;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 .state{
-    width: 40%;
+    grid-column-start: 3;
+    grid-column-end: 4;
 }
 .zip{
-    width: 32%;
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
 .country{
-    width: 65%;
+    grid-column-start: 2;
+    grid-column-end: 4;
 }
+
 input[type="radio"],input[type="checkbox"]{
     width: 1.3em;
     margin: 0 0.5em 0 0;
