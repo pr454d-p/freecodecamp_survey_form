@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>New empolyee details</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">New employee details</h1>
+        <p id="description">Please fill out your information below</p>
+    </header>
+    <form id="survey-form">
+        <fieldset>
+            <label for="name"id="name-label">Name<input id="name" type="text" placeholder="John Doe" required></label>
+            <label for="email" id="email-label" >Email<input id="email" type="email" placeholder="example@example.com" required ></label>
+            <label for="mobile" id="mobile=label">Mobile<input id="mobile" type="tel" placeholder="+91 12345 67890" required ></label>
+            <label for="number" id="number-label">Age<input id="number" type="number" min="18" max="35" placeholder="18 - 35" required ></label>
+            <label>Address
+             <input type="street" id="street" placeholder="Street" required/>
+             <input class="city" type="city" placeholder="City" required><input class="state" type="state" placeholder="state" required>
+             <input class="zip" type="zip" placeholder="Zip" required ><input class="country" type="country" placeholder="Country" required>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label>Employment type
+                <label for="full-time" class="radio-font"><input id="full-time" name="employment-type" type="radio" value="full-time">Full time</label>
+                <label for="part-time" class="radio-font"><input id="part-time" name="employment-type" type="radio" value="part-time">Part time</label>
+                <label for="casual" class="radio-font"><input id="casual" name="employment-type" type="radio" value="casual">Casual</label>
+            </label>
+            <label>Usual days of Employment
+                <label for="monday" class="checkbox-font"><input type="checkbox" id="monday" value="monday">Monday</label>
+                <label for="tuesday" class="checkbox-font"><input type="checkbox" id="tuesday" value="tuesday">Tuesday</label>
+                <label for="wednesday" class="checkbox-font"><input type="checkbox" id="wednesday" value="wednesday">Wednesday</label>
+                <label for="thursday" class="checkbox-font"><input type="checkbox" id="thursday" value="thursday">Thursday</label>
+                <label for="friday" class="checkbox-font"><input type="checkbox" id="friday" value="friday">Friday</label>
+                <label for="casual" class="checkbox-font"><input type="checkbox" id="casual" value="casual">Casual as required</label>
+            </label>
+            <label for="date">Preferred joining date<input id="date" value="date" type="date">
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="work-internship-experience">Work/Internship Experience(Years)
+                <input id="="work-internship-experience"" type="number" placeholder="0 - 25" min="0" max="25" />
+                </label>
+            <label>Educational qualification
+                <select id="dropdown">
+                    <option disabled selected>Select an option</option>
+                    <option value="doctorate">Doctorate</option>
+                    <option value="post-graduation">Post graduation</option>
+                    <option value="graduation">Graduation</option>
+                    <option value="diploma">Diploma</option>
+                    <option value="higher-secondary">Higher secondary</option>
+                    <option value="high-school">High school</option>
+                    <option value="elementary-school">Elementary school</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="question/comments">
+                Enter your question/comments?
+                <textarea id="question/comments" placeholder="Enter your questions/comments?" rows="5" cols="15"></textarea>
+            </label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+    </form>
+    <footer>
+        <p>Background image by <a href="https://www.freepik.com/free-vector/hand-painted-watercolor-abstract-watercolor-background_15634894.htm#query=green%20wallpaper&position=4&from_view=keyword">Freepik</a></p>
+        <p>Form created by <a href="https://www.linkedin.com/in/pr454d-p/">PRASAD P</a></p>
+    </footer>
+</body>
+</html>
