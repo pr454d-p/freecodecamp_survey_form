@@ -47,14 +47,12 @@ input{
 }
 .state{
     width: 40%;
-    float: right;
 }
 .zip{
     width: 32%;
 }
 .country{
     width: 65%;
-    float: right;
 }
 input[type="radio"],input[type="checkbox"]{
     width: 1.3em;
